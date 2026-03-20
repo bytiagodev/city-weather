@@ -13,7 +13,7 @@ The **Open-Meteo API** requires coordinates (Latitude/Longitude), but users type
 
 ### ✨ What I Explored
 *   **Data Logic:** Manipulating JSON objects to extract temperature, wind speed, and weather codes.
-*   **User Feedback:** Implementing *Loading* and *Error* states—essential for when the internet fails or a city isn't found.
+*   **User Feedback:** Implementing *Loading* and *Error* states, essential for when the internet fails or a city isn't found.
 *   **Dynamic UI:** The background colors change based on the weather (sun, rain, snow), which helped me **work with** DOM class manipulation more effectively.
 *   **Glassmorphism Aesthetic:** Experimented with modern "frosted glass" effects using transparency and `backdrop-filter`.
 
