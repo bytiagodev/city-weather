@@ -77,6 +77,6 @@ No API keys needed. Both Open-Meteo endpoints are free and open.
 
 <div align="center">
 
-**[Live Demo](https://bytiagodev.github.io/weather-app-js/)** · **[bytiago.com](https://bytiago.com)**
+**[Live Demo](https://bytiagodev.github.io/city-weather/)** · **[bytiago.com](https://bytiago.com)**
 
 </div>
