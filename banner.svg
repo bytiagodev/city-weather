@@ -1,0 +1,80 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>City Weather. The whole interface changes with the weather.</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c9cf6"/>
+      <stop offset="100%" style="stop-color:#15c3fb"/>
+    </linearGradient>
+    <linearGradient id="blob1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.25)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)"/>
+    </linearGradient>
+    <linearGradient id="blob2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0,0,0,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0.04)"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <clipPath id="clip">
+      <rect width="900" height="200" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="900" height="200" fill="url(#bg)"/>
+
+  <!-- Blob top-left -->
+  <ellipse cx="60" cy="40" rx="180" ry="140" fill="url(#blob1)" filter="url(#blur1)" clip-path="url(#clip)"/>
+
+  <!-- Blob bottom-right -->
+  <ellipse cx="820" cy="175" rx="130" ry="110" fill="url(#blob2)" filter="url(#blur2)" clip-path="url(#clip)"/>
+
+  <!-- Glass card background -->
+  <rect x="28" y="22" width="844" height="156" rx="24"
+    fill="rgba(255,255,255,0.1)"
+    stroke="rgba(255,255,255,0.28)"
+    stroke-width="1"/>
+
+  <!-- Sun emoji -->
+  <text x="62" y="116" font-size="58" font-family="sans-serif">☀️</text>
+
+  <!-- Main title -->
+  <text
+    x="186"
+    y="105"
+    font-family="'Satoshi', 'DM Sans', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52"
+    font-weight="800"
+    letter-spacing="-2"
+    fill="#ffffff"
+    style="text-shadow: 0 2px 12px rgba(0,0,0,0.2)">City Weather</text>
+
+  <!-- Subtitle -->
+  <text
+    x="188"
+    y="138"
+    font-family="'Satoshi', 'DM Sans', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15"
+    font-weight="400"
+    letter-spacing="0.5"
+    fill="rgba(255,255,255,0.78)">The whole interface changes with the weather.</text>
+
+  <!-- Right-side pill: stack -->
+  <rect x="672" y="78" width="196" height="44" rx="22"
+    fill="rgba(255,255,255,0.15)"
+    stroke="rgba(255,255,255,0.3)"
+    stroke-width="1"/>
+  <text
+    x="770"
+    y="105"
+    text-anchor="middle"
+    font-family="'Satoshi', 'DM Sans', 'Helvetica Neue', Arial, sans-serif"
+    font-size="13"
+    font-weight="600"
+    letter-spacing="1.5"
+    fill="rgba(255,255,255,0.9)">JS · API · CSS</text>
+</svg>
